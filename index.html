@@ -1,60 +1,95 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Jogo da velha</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="game.png" type="image/png">
+
   </head>
-<body>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-      <div>
-        JOGO DA VELHA - PROG.WEB
-      </div>
-    </div>
-    
+  <body>
+    <div class="title">TIC-TAC-TOE</div>
     <div>
+      <div>
         <div id="1" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="2" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="3" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
-    </div>
-    
-    <div>
+      </div>
+
+      <div>
         <div id="4" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="5" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="6" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
-    </div>
-    
-    <div>
+      </div>
+
+      <div>
         <div id="7" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="8" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
         <div id="9" class="tabuleiro" onclick="select_bolinha(this.id)">-</div>
+      </div>
     </div>
 
-<div class="jogador">
-    <label class="=jog1">PLAYER:</label>
-    <label id="jogador-selecionado"></label>
-</div>
-<div class="vencedor">
-    <label>WINNER:</label>
-    <label id="vencedor-selecionado"></label>
-    <label>!</label>
-</div>
+    <div class="jogador">
+      <label class="=jog1">PLAYER:</label>
+      <label id="jogador-selecionado"></label>
+    </div>
+    <div class="vencedor">
+      <label>WINNER:</label>
+      <label id="vencedor-selecionado"></label>
+      <label>!</label>
+    </div>
 
-<div class="botao">
-    <a href="index.html" class="btn btn1">restart</a>
-</div>
-<p></p>
+    <div class="botao"><a href="index.html" class="btn btn1">restart</a></div>
 
+    <footer class="footer">
+      <div class="footer-left">
+        <p>© 2025 Bruno Feliciano Martins. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-section">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Brunofell"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/bruno-feliciano-863137239/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+              <li>
+              <a
+                href="https://brunofeliciano.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:brunofelicianom@gmail.com">Email</a></li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+5541999999999">+55 41 98509-2004</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-
-<script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
